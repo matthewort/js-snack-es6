@@ -26,13 +26,39 @@ var bici =
 
 
 var piuLeggera = bici[0];
-for (var i = 0; i < bici.length; i++) {
-  if (bici[i].peso < piuLeggera.peso) {
-    piuLeggera = bici[i];
+
+// alternativa col ciclo for
+// for (var i = 0; i < bici.length; i++) {
+//   if (bici[i].peso < piuLeggera.peso) {
+//     piuLeggera = bici[i];
+//   }
+// }
+
+// console.log(piuLeggera);
+
+// alternativa col for each
+bici.forEach((element) => {
+  if(element.peso < piuLeggera.peso) {
+    piuLeggera = element;
   }
-}
+});
 
 console.log(piuLeggera);
+
+// stampiamo a schermo il risultato
+// const {peso, name} = biciLeggera;
+// document.getElementById('container').innerHTML =
+// `<ul>
+// <li>Nome: ${name}</li>
+// <li>Peso: ${peso}</li>
+// </ul>`;
+
+
+
+
+
+
+
 
 
 // var lowest = Number.POSITIVE_INFINITY;

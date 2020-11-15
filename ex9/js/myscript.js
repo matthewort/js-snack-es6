@@ -6,18 +6,21 @@ var myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 // chiediamo all’utente con 2 prompt due numeri tra 0 e la lunghezza dell’array
 // quindi creiamone uno nuovo con solo i valori che hanno la posizione compresa tra i due numeri inseriti dall’utente
 
-var mysecondArray = ['A', 'B', 'C', 'D', 'E'];
-// var selezione = mysecondArray.slice(1, 4);
-// console.log(selezione);
-var domandaUno;
-var domandaDue;
-// do{
-domandaUno = prompt("UNO: inserisci un numero tra 0 e " + mysecondArray.length);
-domandaDue = prompt("DUE: inserisci un numero tra 0 e " + mysecondArray.length);
-// } while(isNan(domandaUno) || isNan(domandaDue) || domandaDue < domandaUno)
+// var mysecondArray = ['A', 'B', 'C', 'D', 'E'];
+// // var selezione = mysecondArray.slice(1, 4);
+// // console.log(selezione);
+// var domandaUno;
+// var domandaDue;
+// // do{
+// domandaUno = prompt("UNO: inserisci un numero tra 0 e " + mysecondArray.length);
+// domandaDue = prompt("DUE: inserisci un numero tra 0 e " + mysecondArray.length);
+// // } while(isNan(domandaUno) || isNan(domandaDue) || domandaDue < domandaUno)
+//
+// var result = mysecondArray.slice(domandaUno, domandaDue);
+// console.log(result);
 
-var result = mysecondArray.slice(domandaUno, domandaDue);
-console.log(result);
+// con il for each
+const newArray = []
 
 
 // for (var i = 0; i < mysecondArray.length; i++) {
