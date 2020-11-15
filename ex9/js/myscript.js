@@ -2,6 +2,12 @@
 //Partendo da un array semplice tipo:
 
 var myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+let min;
+let max;
+do{
+  min = parseInt(prompt('Inserisci un numero compreso tra 0 e 5'));
+  max = parseInt(prompt('Inserisci un numero compreso tra 0 e 5'));
+} while (min > max);
 
 // chiediamo all’utente con 2 prompt due numeri tra 0 e la lunghezza dell’array
 // quindi creiamone uno nuovo con solo i valori che hanno la posizione compresa tra i due numeri inseriti dall’utente
@@ -21,54 +27,10 @@ var myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
 // con il for each
 const newArray = []
+myArray.forEach((element, index) => {
+  if (min <= index && max >= index) {
+    newArray.push(element);
+  }
+});
 
-
-// for (var i = 0; i < mysecondArray.length; i++) {
-//
-// // DOMANDA UNO
-//
-//   if (domandaUno >= 0 && domandaUno <= mysecondArray.length) {
-//     var selezione = mysecondArray.slice(0, 5);
-//   }
-//
-//   if (domandaUno >= 0 && domandaUno <= 4) {
-//     var selezione = mysecondArray.slice(0, 4);
-//   }
-//
-//   if (domandaUno >= 0 && domandaUno <= 3) {
-//     var selezione = mysecondArray.slice(0, 3);
-//   }
-//
-//   if (domandaUno >= 0 && domandaUno <= 2) {
-//     var selezione = mysecondArray.slice(0, 2);
-//   }
-//
-//   if (domandaUno >= 0 && domandaUno <= 1) {
-//     var selezione = mysecondArray.slice(0, 1);
-//   }
-//
-// // DOMANDA DUE
-//
-//   if (domandaDue >= 0 && domandaDue <= mysecondArray.length) {
-//     var selezione = mysecondArray.slice(0, 5);
-//   }
-//
-//   if (domandaDue >= 0 && domandaDue <= 4) {
-//     var selezione = mysecondArray.slice(0, 4);
-//   }
-//
-//   if (domandaDue >= 0 && domandaDue <= 3) {
-//     var selezione = mysecondArray.slice(0, 3);
-//   }
-//
-//   if (domandaDue >= 0 && domandaDue <= 2) {
-//     var selezione = mysecondArray.slice(0, 2);
-//   }
-//
-//   if (domandaDue >= 0 && domandaDue <= 1) {
-//     var selezione = mysecondArray.slice(0, 1);
-//   }
-//
-// }
-//
-// console.log(selezione);
+console.log(newArray);
